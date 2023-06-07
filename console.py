@@ -14,8 +14,8 @@ artist_repository.save(artist1)
 artist_repository.save(artist2)
 all_artists = artist_repository.select_all()
 one_artist = artist_repository.select(artist1.id)
-artist_repository.update(artist1)
-artist_repository.delete(artist2)
+artist_repository.update(artist1.id)
+artist_repository.delete(artist2.id)
 
 
 album1 = Album('The Blue Album', 'Rock', artist1)

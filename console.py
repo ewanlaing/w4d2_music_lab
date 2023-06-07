@@ -14,7 +14,7 @@ artist_repository.save(artist1)
 artist_repository.save(artist2)
 all_artists = artist_repository.select_all()
 one_artist = artist_repository.select(artist1.id)
-artist_repository.update(artist1.id)
+artist_repository.update(artist1)
 artist_repository.delete(artist2.id)
 
 
@@ -26,6 +26,6 @@ all_albums = album_repository.select_all()
 one_album = album_repository.select(album1.id)
 album_list = album_repository.albums_by_artist(artist1)
 album_repository.update(album1)
-album_repository.delete(album2)
+album_repository.delete(album2.id)
 
 
